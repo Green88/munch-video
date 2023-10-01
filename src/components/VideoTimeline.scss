@@ -1,0 +1,20 @@
+.video-timeline {
+	position: relative;
+	background-color: #4c4343;
+	padding: 20px 4px;
+}
+
+.timeline-pointer {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 2px;
+	background-color: red;
+	z-index: 1000;
+	cursor: ew-resize;
+}
+
+.ruler-wrapper {
+	position: absolute;
+	top: 12px;
+  }
