@@ -20,12 +20,14 @@ const VideoEditor = () => {
 		setStart(time);
 		if (playbackTime < time) {
 			setPlaybackTime(time + INTERVAL);
+			setManualTimeline(time + INTERVAL);
 		}
 	};
 	const handleEndChange = (time) => {
 		setEnd(time);
 		if (playbackTime > time) {
 			setPlaybackTime(time - INTERVAL);
+			setManualTimeline(time - INTERVAL);
 		}
 	};
 	return (
