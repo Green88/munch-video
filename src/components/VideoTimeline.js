@@ -88,7 +88,7 @@ const VideoTimeline = ({ src, playbackTime, onTimelineManualUpdate, onStartChang
 				</div>
 				{timelineWidth && (
 					<div className='ruler-wrapper' style={{ width: `${timelineWidth}px` }}>
-						<TrimBar delay={200} height={(THUMB_WIDTH/imageRatio) - 20} size={timelineWidth} onLeftResize={handleStartResize} onRightResize={handleEndResize} />
+						<TrimBar delay={200} height={(THUMB_WIDTH/imageRatio) - 8} size={timelineWidth} onLeftResize={handleStartResize} onRightResize={handleEndResize} />
 					</div>
 				)}
 			</div>

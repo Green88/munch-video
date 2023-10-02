@@ -24,6 +24,9 @@ const VideoPlayer = ({ src, onPlaybackTimeUpdate, manualTimeline, start, end }) 
 			const handleTimeUpdate = () => {
 				const playbackTime = video.currentTime;
 				onPlaybackTimeUpdate(playbackTime);
+				if (end && playbackTime >= end) {
+					video.pause();
+				}
 			};
 			video.addEventListener('timeupdate', handleTimeUpdate);
 			return () => {
